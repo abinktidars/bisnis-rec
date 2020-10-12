@@ -1,0 +1,261 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS BASE CSS Documentation:
+----------------------------------------------------------------
+1.0 Color Base
+	1.1 Font Color
+  1.2 Social Color
+  1.3 Gradient
+2.0 Font
+3.0 Media Query
+  3.1 Grid
+4.0 Animation
+  4.1 Scale
+  4.2 Position
+5.0 Utilities
+  5.2 Clearing
+
+--------------------------------------------------------------*/
+
+// 1.0 Color Base
+$bg_base: #fff;
+$bg_none: none !important;
+
+// Themes Color
+$white: #ffffff;
+$black: #000000;
+$lightblack: #616161;
+$green: #10110f;
+$red: #ec2028;
+$yellow: #FFFF00;
+$blue: #4797BF;
+
+// 1.1 Font Color
+$cl_primary: #313131;
+$cl_white: #fff;
+$cl_red: red;
+$cl_1: #fcc645;
+$cl_2: #02445e;
+
+// 1.2 Social Color
+$cl_fb: #3b5998;
+$cl_tw: #4099ff;
+$cl_gp: #d34836;
+$cl_wa: #43d854;
+
+//1.3 Gradient Color
+@mixin bg-gradient-black {
+  background: rgba(0, 0, 0, 0);
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.6) 37%,
+    rgba(0, 0, 0, 0.66) 47%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(0, 0, 0, 0)),
+    color-stop(37%, rgba(0, 0, 0, 0.6)),
+    color-stop(47%, rgba(0, 0, 0, 0.66)),
+    color-stop(100%, rgba(0, 0, 0, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.6) 37%,
+    rgba(0, 0, 0, 0.66) 47%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.6) 37%,
+    rgba(0, 0, 0, 0.66) 47%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.6) 37%,
+    rgba(0, 0, 0, 0.66) 47%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.6) 37%,
+    rgba(0, 0, 0, 0.66) 47%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+}
+
+@mixin bg-black {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@mixin bg-radial-black {
+  background: rgba(255, 255, 255, 0);
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -webkit-gradient(
+    radial,
+    center center,
+    0px,
+    center center,
+    100%,
+    color-stop(0%, rgba(255, 255, 255, 0)),
+    color-stop(100%, rgba(0, 0, 0, 1))
+  );
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -o-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -ms-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=1 );
+}
+
+@mixin gradientBlue{
+  background: linear-gradient(0deg, #62B8CC 61.38%, #50AFC4 75.67%, #36A1B7 100%);
+}
+
+@mixin gradientBlue2 {
+  background: rgba(70,121,127,1);
+  background: -moz-linear-gradient(top, rgba(70,121,127,1) 0%, rgba(239,192,134,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(70,121,127,1)), color-stop(100%, rgba(239,192,134,1)));
+  background: -webkit-linear-gradient(top, rgba(70,121,127,1) 0%, rgba(239,192,134,1) 100%);
+  background: -o-linear-gradient(top, rgba(70,121,127,1) 0%, rgba(239,192,134,1) 100%);
+  background: -ms-linear-gradient(top, rgba(70,121,127,1) 0%, rgba(239,192,134,1) 100%);
+  background: linear-gradient(to bottom, rgba(70,121,127,1) 0%, rgba(239,192,134,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46797f', endColorstr='#efc086', GradientType=0 );
+}
+
+@mixin gradientBlue3 {
+  background: rgba(102,128,121,1);
+background: -moz-linear-gradient(top, rgba(102,128,121,1) 0%, rgba(242,176,109,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(102,128,121,1)), color-stop(100%, rgba(242,176,109,1)));
+background: -webkit-linear-gradient(top, rgba(102,128,121,1) 0%, rgba(242,176,109,1) 100%);
+background: -o-linear-gradient(top, rgba(102,128,121,1) 0%, rgba(242,176,109,1) 100%);
+background: -ms-linear-gradient(top, rgba(102,128,121,1) 0%, rgba(242,176,109,1) 100%);
+background: linear-gradient(to bottom, rgba(102,128,121,1) 0%, rgba(242,176,109,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#668079', endColorstr='#f2b06d', GradientType=0 );
+}
+
+// 2.0 Font
+$font_body: "Roboto Condensed", sans-serif;
+$font_1: "Roboto Condensed", sans-serif;
+$font_2: "rockwell_condensed";
+$font_icon: "icomoon";
+
+// 3.0 Media Query
+@mixin max-responsive($media) {
+  @media (max-width: $media) {
+    @content;
+  }
+}
+@mixin min-responsive($media) {
+  @media (min-width: $media) {
+    @content;
+  }
+}
+@mixin range-responsive($media, $media2) {
+  @media (min-width: $media) and (max-width: $media2) {
+    @content;
+  }
+}
+
+//3.1 Grid
+$xlg: 1600px;
+$lg: 1100px;
+$md: 992px;
+$sm: 768px;
+$xs: 360px;
+$xxs: 320px;
+
+// 4.0 Animation
+@mixin transition($t) {
+  -webkit-transition: all $t ease;
+  -moz-transition: all $t ease;
+  -ms-transition: all $t ease;
+  -o-transition: all $t ease;
+  transition: all $t ease;
+}
+
+@mixin base_transition($t) {
+  -webkit-transition: $t 0.2s ease;
+  -moz-transition: $t 0.2s ease;
+  -ms-transition: $t 0.2s ease;
+  -o-transition: $t 0.2s ease;
+  transition: $t 0.2s ease;
+}
+
+// 4.1 Scale
+@mixin base_scale($x) {
+  -ms-transform: scale($x);
+  -webkit-transform: scale($x);
+  transform: scale($x);
+}
+
+// 4.2 Position
+@mixin base_position($p) {
+  -ms-transform: translate($p);
+  -webkit-transform: translate($p);
+  transform: translate($p);
+}
+
+@mixin base_position_y($y) {
+  -ms-transform: translateY($y);
+  -webkit-transform: translateY($y);
+  transform: translateY($y);
+}
+
+
+
+// 5.3 Clearing
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+// 5.4 Parallax
+
+@mixin parallax {
+  width: 100%;
+  position: absolute;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  background-attachment: fixed;
+}
+
+@mixin display_full {
+  width: 100%;
+  height: 100%;
+}
