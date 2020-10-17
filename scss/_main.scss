@@ -160,6 +160,12 @@ body{
       }
     }
 
+    &__invest{
+      &--coin{
+        left: 100%;
+      }
+    }
+
   }
 
   &__static {
@@ -361,9 +367,13 @@ body{
   color: $black;
   border-radius: 12px;
   padding: 14px;
+  min-height: 83px;
   font-weight: 700;
   font-size: 1.3em;
-  position: absolute;  
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
 
   @include min-responsive($sm){
     width: 400px;    
@@ -393,6 +403,12 @@ body{
     left: 0;
     right: 0;
     margin: -20vw auto 0px;
+  }
+
+  &--3{
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 
 }

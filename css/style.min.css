@@ -1292,6 +1292,10 @@ a {
   bottom: -100%;
 }
 
+.page__animation__invest--coin {
+  left: 100%;
+}
+
 .page__static {
   position: fixed;
   top: 0;
@@ -1472,9 +1476,13 @@ a {
   color: #000000;
   border-radius: 12px;
   padding: 14px;
+  min-height: 83px;
   font-weight: 700;
   font-size: 1.3em;
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
@@ -1510,6 +1518,12 @@ a {
   left: 0;
   right: 0;
   margin: -20vw auto 0px;
+}
+
+.text-popout--3 {
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .text-highlight {
