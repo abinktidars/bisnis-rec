@@ -1288,6 +1288,10 @@ a {
   }
 }
 
+.page__animation__kilang--building2 {
+  bottom: -100%;
+}
+
 .page__static {
   position: fixed;
   top: 0;
@@ -1341,7 +1345,11 @@ a {
 }
 
 .page__color--evening {
-  background: linear-gradient(0deg, #62B8CC 61.38%, #50AFC4 75.67%, #36A1B7 100%);
+  background: linear-gradient(0deg, #D7CA9C 5.83%, #BCA964 79.32%);
+}
+
+.page__color--night {
+  background: linear-gradient(0deg, #D7CA9C 5.83%, #BCA964 79.32%);
 }
 
 .page__color--blue {
@@ -1467,9 +1475,6 @@ a {
   font-weight: 700;
   font-size: 1.3em;
   position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
 }
 
 @media (min-width: 768px) {
@@ -1493,6 +1498,39 @@ a {
   border-radius: 50%;
   height: 40px;
   width: 40px;
+}
+
+.text-popout--1 {
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.text-popout--2 {
+  left: 0;
+  right: 0;
+  margin: -20vw auto 0px;
+}
+
+.text-highlight {
+  position: relative;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .text-highlight {
+    margin-top: -11vw;
+  }
+}
+
+.text-highlight::before {
+  content: '';
+  position: absolute;
+  top: -16px;
+  left: 10px;
+  background: #FFFF00;
+  height: 11px;
+  width: 80px;
 }
 
 .scroll-down {

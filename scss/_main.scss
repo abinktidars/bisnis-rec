@@ -8,6 +8,10 @@
 
 // 1.0 Page
 
+body{
+  // @include gradientBlue; 
+}
+
 .picturefill-background {
   width: 100%;
   height: 100%;
@@ -150,6 +154,12 @@
       }
     }
 
+    &__kilang{
+      &--building2{
+        bottom: -100%;
+      }
+    }
+
   }
 
   &__static {
@@ -198,11 +208,15 @@
     }
 
     &--soon{
-      @include gradientBlue;
+      @include gradientBlue;     
     }
 
     &--evening{
-      @include gradientBlue;
+      @include gradientOrange;  
+    }
+
+    &--night{
+      @include gradientOrange;
     }
 
     &--blue{
@@ -340,7 +354,7 @@
   }
 }
 
-// 3.0 Custom
+// 3.0 Custom General
 
 .text-popout {
   background: $white;
@@ -349,10 +363,7 @@
   padding: 14px;
   font-weight: 700;
   font-size: 1.3em;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
+  position: absolute;  
 
   @include min-responsive($sm){
     width: 400px;    
@@ -370,6 +381,36 @@
     border-radius: 50%;
     height: 40px;
     width: 40px;
+  }
+
+  &--1{
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  &--2{
+    left: 0;
+    right: 0;
+    margin: -20vw auto 0px;
+  }
+
+}
+
+.text-highlight{
+  position: relative;
+  text-align: left;
+  @include min-responsive($sm){
+    margin-top: -11vw;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: -16px;
+    left: 10px;
+    background: $yellow;
+    height: 11px;
+    width: 80px;
   }
 }
 

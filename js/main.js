@@ -35,23 +35,19 @@ $(document).ready(function() {
         $(".social").fadeOut(300);    
         $(".backtop").addClass("show");
         $(".page__animation__cover--build-2").fadeOut(500);
-        $(".page__animation__cover--build-3").fadeIn(500);
+        $(".page__animation__cover--build-3").fadeIn(500);    
       } 
       else if (index == 2 && direction == "up") {
         $(".social").fadeIn(300);
         $(".backtop").removeClass("show");
         $(".page__animation__cover--build-2").fadeIn(500);
-        $(".page__animation__cover--build-3").fadeOut(500);
+        $(".page__animation__cover--build-3").fadeOut(500);    
         
       }
       else if (index == 2 && direction == "down") {          
-        // $(".page__static__cover").addClass("moveLeft");  
-        // $(".page__static__apart").removeClass("scrollSlide");
-        
+                         
       } 
-      else if (index == 3 && direction == "up") {
-        // $(".page__static__apart").addClass("scrollSlide");
-        // $(".page__static__cover").removeClass("moveLeft");  
+      else if (index == 3 && direction == "up") {                          
         
       }
       else if (index == 3 && direction == "down") { 
@@ -167,17 +163,32 @@ $(document).ready(function() {
         $(".page__static__museum").addClass("scrollSlide");
       } 
       else if (index == 18 && direction == "down") {    
-        
+        $(".page__static__museum").addClass("moveLeft");  
+        $(".page__static__kilang").removeClass("scrollSlide");        
+        $(".page__color--soon").fadeOut(700);        
+        $(".page__color--evening").fadeIn(700);        
       } 
       else if (index == 19 && direction == "up") {    
-        
+        $(".page__color--soon").fadeIn(700);        
+        $(".page__color--evening").fadeOut(700);        
+        $(".page__static__museum").removeClass("moveLeft");  
+        $(".page__static__kilang").addClass("scrollSlide");              
       } 
       else if (index == 19 && direction == "down") {    
-        
+        $(".page__color--soon").fadeIn(700);        
+        $(".page__color--evening").fadeOut(700);         
+        $(".page__animation__kilang--hill").fadeOut(700);                 
+        $(".page__animation__kilang--building").velocity({bottom:"-100%"}, {delay: 10, duration: 400});                 
+        $(".page__animation__kilang--building2").velocity({bottom:"0%"}, {delay: 10, duration: 400});                 
       } 
       else if (index == 20 && direction == "up") {    
-        
-
+        $(".page__color--soon").fadeOut(700);        
+        $(".page__color--evening").fadeIn(700);                
+        $(".page__animation__kilang--hill").fadeIn(700);         
+        $(".page__animation__kilang--building").velocity({bottom:"0%"}, {delay: 10, duration: 400});                 
+        $(".page__animation__kilang--building2").velocity({bottom:"-100%"}, {delay: 10, duration: 400});                 
+        // $(".page__animation__kilang--building").fadeIn(700);                 
+        // $(".page__animation__kilang--building2").fadeOut(700);                 
       } 
       else if (index == 20 && direction == "down") {   
         
