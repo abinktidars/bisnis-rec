@@ -91,6 +91,65 @@ body{
     
   }
 
+  &__25{
+    .text{
+      font-size: 22px;
+    }
+  }
+
+  &__26{
+    .content {
+      text-align: left;
+      margin-top: -20vw;
+      margin-left: -6vw;
+      font-size: 1.3em;
+
+      h1{
+        color: #73382B;
+      }
+    }
+  }
+
+  &__32{
+    .content{
+      color: #73382B;      
+    }
+  }
+
+  &__33{
+    .title{
+      text-align: center;
+      @include min-responsive($sm){
+        margin-top: -20vw;
+        font-size: 1.5em;
+      }
+      @include max-responsive($sm){
+        margin-top: -40vw;
+      }
+    }
+  }
+
+  &__38{
+    .content-graph{
+      margin-top: -5vw;
+    }
+  }
+
+  &__39{
+    .content{
+      color: #73382B;   
+      font-size: 3.6em;   
+    }
+  }
+
+  &__40{
+    .content{
+      h2{
+        font-size: 3em;
+      }
+    }
+  }
+
   &__animation {
     width: 100%;
     height: 100%;
@@ -161,9 +220,46 @@ body{
     }
 
     &__invest{
+      &--awan{
+        left: 20%;
+      }
       &--coin{
         left: 100%;
       }
+      &--build{
+        left: 100%;
+      }
+      &--text2{
+        top: 100%;
+        .text{
+          font-size: 22px;
+          margin-top: -15vw;
+        }
+      }
+      &--text3{
+        top: 100%;
+        .text{
+          font-size: 22px;
+          margin-top: -8vw;
+        }
+      }
+    }   
+    
+    &__outlet{
+      &--bubble{
+        display: none;
+      }
+      &--booth{
+        bottom: -2vw;
+      }
+    }
+
+    &__listrik{
+
+    }
+
+    &__pabrik{
+      
     }
 
   }
@@ -193,6 +289,104 @@ body{
       top: 100%;
     }
 
+    &__outlet{
+      top: 100%;
+      background: #D8CB8B;
+
+      .bottom-bg {
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        background: #D0AC8A;
+        bottom: 0;
+      }
+    }
+
+    &__listrik{
+      background: #D8CB8B;
+      .bottom-bg {
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        background: #D0AC8A;
+        bottom: 0;
+      }
+    }
+
+    &__skema{
+      top: 100%;
+    }
+    
+    &__potensi{
+      top: 100%;
+    }
+    
+    &__pabrik{
+      top: 100%;
+      background: #FF7262;
+    }
+    
+    &__air{
+      top: 100%;
+      background: #72BDBA;
+    }
+    
+    &__surya{
+      top: 100%;
+      background: #FFB533;
+    }
+    
+    &__bayu{
+      top: 100%;
+      background: #8CB596;
+    }
+    
+    &__ombak{
+      top: 100%;
+      background: #177D8F;
+    }
+
+    &__energi{
+      top: 100%;
+      background: linear-gradient(to bottom, rgba(240,196,81,1) 0%, rgba(230,242,92,1) 100%);
+      .bg-color{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        
+        &--1{
+          opacity: 0.6;
+          background: linear-gradient(to bottom, rgba(240,196,81,1) 0%, rgba(230,242,92,1) 100%);
+        }
+        &--2{
+          opacity: 0.9;
+          background: linear-gradient(to bottom, rgba(81,163,240,1) 0%, rgba(240,196,81,1) 100%);
+          display: none;
+        }
+        &--3{
+          opacity: 0.8;
+          background: linear-gradient(to bottom, rgba(81,163,240,1) 0%, rgba(167,181,154,1) 100%);
+          display: none;
+        }
+        &--4{
+          opacity: 0.9;
+          background: linear-gradient(to bottom, rgba(13,68,120,1) 0%, rgba(22,103,178,1) 100%);
+          display: none;
+        }
+      }
+    }
+    
+    &__pembangkit{
+      top: 100%;
+      background: linear-gradient(180deg, #E6F25C 0%, #F0C451 21.55%, #51A4F0 38.46%, #1667B3 60.56%, #0D4478 74.88%, #03121F 91.66%);
+    }
+    
+    &__credit{
+      top: 100%;
+      background: linear-gradient(180deg, #E6F25C 0%, #F0C451 12.82%, #51A4F0 38.46%, #1667B3 60.56%, #0D4478 74.88%, #03121F 91.66%);
+    }
   }
 
   &__image {
@@ -243,47 +437,7 @@ body{
       width: 100%;
       background-size: 100% 100%;
     }
-  }  
-
-  .credit{
-    position: relative;
-    color: $white;
-    height: 90vh;
-    font-weight: 500;
-
-    @include max-responsive($sm){
-      height: auto;
-      text-align: center;
-    }
-
-    &__content{
-      
-      &--logo{
-        margin: 30px auto;
-      }
-
-      &__item{
-        margin-bottom: 20px;
-        
-        &--title{
-          color: #D6C45D;
-          margin-bottom: 5px;
-          font-size: 17px;
-        }
-        
-        &--name{
-          margin-bottom: 5px;
-          font-size: 16px;
-        }
-      }
-    }
-
-    &__bg{
-      position: absolute;
-      right: 0;
-      bottom: 0;
-    }
-  }
+  } 
 }
 
 
@@ -427,6 +581,118 @@ body{
     background: $yellow;
     height: 11px;
     width: 80px;
+  }
+}
+
+.text-zoom{
+  background: $white;
+  border: 3px solid $blue;
+  border-radius: 32px;
+  padding: 16px;
+  text-align: left;
+  
+  .text{
+    color: $black; 
+    font-weight: bold;   
+  }
+}
+
+.content-graph{
+  color: $white;
+  .title{
+    font-size: 4em;
+    font-weight: bold;
+  }
+  .stats{
+    border-radius: 16px;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    @include min-responsive($sm){
+      width: 320px;
+    }
+    @include max-responsive($sm){
+      width: 320px;
+    }    
+    h1{
+      color: $white;    
+      font-size: 3em;   
+    }
+    p{
+      color: $yellow;
+      margin-bottom: 0px;
+      font-size: 1.6em;
+    }
+    &--red{
+      background: #CE0F00;
+    }
+    &--tosca{
+      background: #0D7A7F;
+    }
+    &--yellow{
+      background: #EF6F06;
+    }
+    &--green{
+      background: #589965;
+    }
+    &--blue{
+      background: #003B4F;
+    }
+  }
+  .detail{
+    color: $white;    
+    font-size: 1.6em;
+    margin-top: 24px;
+  }
+  &--red{
+    .title{
+      color: #CE0F00;
+    }
+  }
+  &--tosca{
+    .title{
+      color: #0D7A7F;
+
+    }
+  }
+  &--yellow{
+    .title{
+      color: #EF6F06;
+    }
+  }
+  &--green{
+    .title{
+      color: #0D7A7F;
+    }
+  }
+  &--blue{
+    .title{
+      color: #003B4F;
+    }
+  }
+}
+
+.content-area {
+  display: flex;
+  flex: 1;
+  margin-top: 30px;
+
+  .item{
+    flex: 1;
+    p{
+      font-size: 1.6em;
+    }
+  }
+}
+
+.credit{
+  &__item{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.6em;
+    &--title{
+      font-weight: bold;
+    }
   }
 }
 

@@ -203,7 +203,7 @@ $(document).ready(function() {
         $(".page__static__invest").addClass("scrollSlide");   
       } 
       else if (index == 22 && direction == "down") {    
-        $(".text-popout--3").velocity({marginTop:"-15vw"}, {delay: 10, duration: 500});               
+        $(".text-popout--3").velocity({marginTop:"-20vw"}, {delay: 10, duration: 500});               
       } 
       else if (index == 23 && direction == "up") {    
         $(".text-popout--3").velocity({marginTop:"0vw"}, {delay: 10, duration: 500});               
@@ -211,35 +211,42 @@ $(document).ready(function() {
       } 
       else if (index == 23 && direction == "down") {    
         $(".page__animation__invest--coin").velocity({left:"0%"}, {delay: 100, duration: 650});                       
+        $(".page__animation__invest--text2").velocity({top:"0%"}, {delay: 300, duration: 650});                       
       } 
       else if (index == 24 && direction == "up") {    
         $(".page__animation__invest--coin").velocity({left:"100%"}, {delay: 100, duration: 500});                       
+        $(".page__animation__invest--text2").velocity({top:"100%"}, {delay: 300, duration: 650});                       
         
       } 
       else if (index == 24 && direction == "down") {    
-        // $(".page__static__challenge").addClass("moveUp");   
-        // $(".page__static__invest").addClass("moveDown");
-
+        $(".page__animation__invest--build").velocity({left:"0%"}, {delay: 100, duration: 650});                       
+        $(".page__animation__invest--text3").velocity({top:"0%"}, {delay: 300, duration: 650});                       
+        
       } 
       else if (index == 25 && direction == "up") {    
-        // $(".page__static__challenge").removeClass("moveUp");   
-        // $(".page__static__invest").removeClass("moveDown");        
+        $(".page__animation__invest--build").velocity({left:"100%"}, {delay: 100, duration: 650});                       
+        $(".page__animation__invest--text3").velocity({top:"100%"}, {delay: 300, duration: 650});                       
         
       } 
       else if (index == 25 && direction == "down") {    
-        
+        $(".page__static__invest").addClass("moveUp");   
+        $(".page__static__outlet").addClass("moveDown");        
       } 
-      else if (index == 26 && direction == "up") {    
+      else if (index == 26 && direction == "up") { 
+        $(".page__static__invest").removeClass("moveUp");   
+        $(".page__static__outlet").removeClass("moveDown");        
       } 
       else if (index == 26 && direction == "down") {  
-        
+        $(".page__animation__outlet--bubble").fadeIn(400);                
       } 
       else if (index == 27 && direction == "up") {    
-                      
+        $(".page__animation__outlet--bubble").fadeOut(400);                                      
       } 
       else if (index == 27 && direction == "down") {    
+        $(".page__animation__outlet--bubble").fadeOut(400);                                      
       } 
       else if (index == 28 && direction == "up") {    
+        $(".page__animation__outlet--bubble").fadeIn(400);                
       } 
       else if (index == 28 && direction == "down") { 
                
@@ -260,89 +267,104 @@ $(document).ready(function() {
         
       } 
       else if (index == 31 && direction == "down") {   
-               
+        $(".page__static__outlet").addClass("moveLeft");  
+        $(".page__static__listrik").removeClass("scrollSlide");
       } 
       else if (index == 32 && direction == "up") {   
-                
-         
+        $(".page__static__outlet").removeClass("moveLeft");  
+        $(".page__static__listrik").addClass("scrollSlide");                         
       } 
-      else if (index == 32 && direction == "down") {    
+      else if (index == 32 && direction == "down") {   
+        $(".page__static__listrik").addClass("moveUp");   
+        $(".page__static__skema").addClass("moveDown");  
+        
       } 
       else if (index == 33 && direction == "up") {           
+        $(".page__static__listrik").removeClass("moveUp");   
+        $(".page__static__skema").removeClass("moveDown");  
       } 
       else if (index == 33 && direction == "down") {   
-         
+        $(".page__static__skema").addClass("moveUp");  
+        $(".page__static__potensi").addClass("moveDown");        
       } 
       else if (index == 34 && direction == "up") {    
-        
+        $(".page__static__skema").removeClass("moveUp");  
+        $(".page__static__potensi").removeClass("moveDown");        
       } 
       else if (index == 34 && direction == "down") {    
-
+        $(".page__static__potensi").addClass("moveUp");        
+        $(".page__static__pabrik").addClass("moveDown");        
       } 
       else if (index == 35 && direction == "up") {    
-
+        $(".page__static__potensi").removeClass("moveUp");        
+        $(".page__static__pabrik").removeClass("moveDown");        
       } 
       else if (index == 35 && direction == "down") {    
-
+        $(".page__static__pabrik").addClass("moveUp");        
+        $(".page__static__air").addClass("moveDown"); 
       } 
       else if (index == 36 && direction == "up") {    
-        
+        $(".page__static__pabrik").removeClass("moveUp");        
+        $(".page__static__air").removeClass("moveDown");         
       } 
       else if (index == 36 && direction == "down") {    
-        
+        $(".page__static__air").addClass("moveUp");        
+        $(".page__static__surya").addClass("moveDown");         
       } 
       else if (index == 37 && direction == "up") {   
-        
-        
+        $(".page__static__air").removeClass("moveUp");        
+        $(".page__static__surya").removeClass("moveDown");         
       } 
       else if (index == 37 && direction == "down") {    
-        
-        
+        $(".page__static__surya").addClass("moveUp");        
+        $(".page__static__bayu").addClass("moveDown");                 
       } 
       else if (index == 38 && direction == "up") {    
-        
-        
+        $(".page__static__surya").removeClass("moveUp");        
+        $(".page__static__bayu").removeClass("moveDown");                 
       } 
       else if (index == 38 && direction == "down") {    
-        
-        
+        $(".page__static__bayu").addClass("moveUp");        
+        $(".page__static__ombak").addClass("moveDown");                         
       } 
       else if (index == 39 && direction == "up") {    
-        
-        
+        $(".page__static__bayu").removeClass("moveUp");        
+        $(".page__static__ombak").removeClass("moveDown");                         
       } 
       else if (index == 39 && direction == "down") {    
-        
+        $(".page__static__ombak").addClass("moveUp");        
+        $(".page__static__energi").addClass("moveDown"); 
       } 
       else if (index == 40 && direction == "up") {    
-             
-
+        $(".page__static__ombak").removeClass("moveUp");        
+        $(".page__static__energi").removeClass("moveDown");              
       } 
       else if (index == 40 && direction == "down") {    
-
+        $(".bg-color--1").fadeOut(500);       
+        $(".bg-color--2").fadeIn(500);       
       } 
       else if (index == 41 && direction == "up") {    
-
+        $(".bg-color--1").fadeIn(500);       
+        $(".bg-color--2").fadeOut(500);       
       } 
       else if (index == 41 && direction == "down") {   
+        $(".bg-color--2").fadeOut(500);       
+        $(".bg-color--3").fadeIn(500);       
         
       } 
       else if (index == 42 && direction == "up") {    
+        $(".bg-color--2").fadeIn(500);       
+        $(".bg-color--3").fadeOut(500);       
         
       } 
       else if (index == 42 && direction == "down") {    
-
+        $(".bg-color--3").fadeOut(500);       
+        $(".bg-color--4").fadeIn(500);       
+        
       } 
       else if (index == 43 && direction == "up") {    
-
-      } 
-      else if (index == 43 && direction == "down") {    
-
-      } 
-      else if (index == 44 && direction == "up") {    
-
-      } 
-      else if (index == 44 && direction == "down") {    
+        $(".bg-color--3").fadeIn(500);       
+        $(".bg-color--4").fadeOut(500);       
 
       }       
     }
