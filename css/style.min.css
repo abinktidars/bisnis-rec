@@ -1955,6 +1955,12 @@ a {
   font-size: 1.6em;
 }
 
+@media (max-width: 768px) {
+  .credit__item {
+    font-size: 1.3em;
+  }
+}
+
 .credit__item--title {
   font-weight: bold;
 }
