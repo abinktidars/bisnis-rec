@@ -121,7 +121,7 @@ a{
   color: $white;
   
   @include max-responsive($sm){
-    font-size: 15px;
+    font-size: 17px;
   }
   
   &--white{

@@ -635,6 +635,10 @@ body{
   border-radius: 32px;
   padding: 16px;
   text-align: left;
+
+  @include max-responsive($sm){
+    margin-top: -70vw;
+  }
   
   .text{
     color: $black; 
@@ -644,12 +648,6 @@ body{
 
 .text-job{
   text-align: left;
-  &--1{
-
-  }
-  &--2{
-
-  }
 }
 
 .content-graph{
