@@ -1223,6 +1223,12 @@ a {
   }
 }
 
+@media (min-width: 768px) {
+  .page__20 .text, .page__21 .text {
+    font-size: 18px;
+  }
+}
+
 .page__25 .text {
   font-size: 22px;
 }
@@ -1357,23 +1363,79 @@ a {
   }
 }
 
+.page__animation__cover .kincir {
+  position: relative;
+  height: 100%;
+}
+
+.page__animation__cover .kincir__item--1 {
+  left: calc(35% - 42px);
+  bottom: calc(31% - 20px);
+  animation: rotating 3s linear infinite;
+  width: 130px;
+}
+
+.page__animation__cover .kincir__item--2 {
+  width: 70px;
+  left: calc(34% - 25px);
+  bottom: calc(30% - 20px);
+  animation: rotating 5s linear infinite;
+}
+
+.page__animation__cover .kincir__item--3 {
+  width: 70px;
+  left: calc(37% - 22px);
+  bottom: calc(26% - 20px);
+  animation: rotating 4s linear infinite;
+}
+
+.page__animation__cover .kincir__item--4 {
+  width: 50px;
+  right: calc(15% - 30px);
+  left: auto;
+  bottom: calc(35% - 17px);
+  animation: rotating 3s linear infinite;
+}
+
+.page__animation__cover .kincir__item--5 {
+  width: 70px;
+  right: calc(17% - 37px);
+  bottom: calc(35% - 17px);
+  left: auto;
+  animation: rotating 5s linear infinite;
+}
+
+.page__animation__cover .kincir__item--6 {
+  width: 40px;
+  right: calc(13% - 34px);
+  left: auto;
+  bottom: calc(33% - 20px);
+  animation: rotating 4s linear infinite;
+}
+
 .page__animation__rec--serti-1, .page__animation__rec--serti-2, .page__animation__rec--serti-3, .page__animation__rec--serti-4, .page__animation__rec--serti-5 {
   display: none;
 }
 
-.page__animation__list--tower {
-  left: 47%;
-  bottom: -5%;
+@media (min-width: 768px) {
+  .page__animation__list--tower, .page__animation__list--towerlight {
+    left: 30%;
+    bottom: -5%;
+  }
 }
 
 @media (max-width: 768px) {
-  .page__animation__list--tower {
+  .page__animation__list--tower, .page__animation__list--towerlight {
     bottom: -22%;
   }
 }
 
 .page__animation__kilang--building2 {
   bottom: -100%;
+}
+
+.page__animation__kilang--buildingasap {
+  animation: flash 2s alternate infinite;
 }
 
 .page__animation__invest--awan {
@@ -1393,7 +1455,7 @@ a {
 }
 
 .page__animation__invest--text2 .text {
-  font-size: 22px;
+  font-size: 20px;
   margin-top: -15vw;
 }
 
@@ -1424,8 +1486,20 @@ a {
   display: none;
 }
 
+.page__animation__outlet--bubble2 {
+  opacity: 0;
+}
+
 .page__animation__outlet--booth {
   bottom: -2vw;
+}
+
+.page__animation__outlet--loop, .page__animation__outlet--loopMobile {
+  bottom: -100%;
+}
+
+.page__animation__skema--content {
+  background-size: contain !important;
 }
 
 .page__static {
@@ -1585,6 +1659,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
+  transition: all 1s ease;
 }
 
 .page__color .item {
@@ -1776,16 +1851,47 @@ a {
 }
 
 .text-zoom {
-  background: #ffffff;
-  border: 3px solid #4797BF;
-  border-radius: 32px;
-  padding: 16px;
-  text-align: left;
+  position: absolute;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 320px;
 }
 
 @media (max-width: 768px) {
   .text-zoom {
-    margin-top: -70vw;
+    width: 250px;
+    margin: 38vw auto 0px;
+    left: auto;
+    bottom: auto;
+    position: relative;
+  }
+}
+
+.text-zoom--1, .text-zoom--2 {
+  left: calc(100% - 54vw);
+  bottom: calc(100% - 13vw);
+}
+
+@media (max-width: 768px) {
+  .text-zoom--1, .text-zoom--2 {
+    left: auto;
+    bottom: auto;
+  }
+}
+
+.text-zoom--3, .text-zoom--4 {
+  position: relative;
+  left: 10vw;
+  bottom: -4vw;
+}
+
+@media (max-width: 768px) {
+  .text-zoom--3, .text-zoom--4 {
+    left: auto;
+    bottom: auto;
   }
 }
 
@@ -1804,7 +1910,7 @@ a {
 
 @media (max-width: 768px) {
   .content-graph {
-    margin-top: -80vw;
+    margin-top: -68vw;
   }
 }
 
@@ -1994,7 +2100,7 @@ a {
   3.2 Wave
 --------------------------------------------------------------*/
 .animate--rotating {
-  animation: rotating 10s linear infinite;
+  animation: rotating 3s linear infinite;
 }
 
 .animate--rotatingReverse {
@@ -2012,8 +2118,7 @@ a {
 }
 
 .animate--flash {
-  animation: flash 1.4s alternate;
-  animation-iteration-count: 2;
+  animation: flash 1.4s alternate infinite;
   animation-delay: 2s;
 }
 

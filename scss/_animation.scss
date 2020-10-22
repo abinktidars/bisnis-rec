@@ -21,11 +21,11 @@
 // 1.0 Animate General
 .animate {
   &--rotating {
-    -webkit-animation: rotating 10s linear infinite;
-    -moz-animation: rotating 10s linear infinite;
-    -ms-animation: rotating 10s linear infinite;
-    -o-animation: rotating 10s linear infinite;
-    animation: rotating 10s linear infinite;
+    -webkit-animation: rotating 3s linear infinite;
+    -moz-animation: rotating 3s linear infinite;
+    -ms-animation: rotating 3s linear infinite;
+    -o-animation: rotating 3s linear infinite;
+    animation: rotating 3s linear infinite;
   }
   &--rotatingReverse {
     -webkit-animation: rotatingReverse 10s linear infinite;
@@ -51,12 +51,9 @@
     transition: all 0.5s ease-out;
   }
   &--flash{
-    -webkit-animation: flash 1.4s alternate;
-    -moz-animation: flash 1.4s alternate;
-    animation: flash 1.4s alternate;
-    -webkit-animation-iteration-count: 2;
-    -moz-animation-iteration-count: 2;
-    animation-iteration-count: 2;
+    -webkit-animation: flash 1.4s alternate infinite;
+    -moz-animation: flash 1.4s alternate infinite;
+    animation: flash 1.4s alternate infinite;
     -webkit-animation-delay: 2s;
     -moz-animation-delay: 2s;
     animation-delay: 2s;
