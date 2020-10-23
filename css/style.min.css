@@ -949,7 +949,7 @@ a {
 }
 
 .backtop__link:hover {
-  background: #FFFF00;
+  background: #4797BF;
 }
 
 .backtop.show {
@@ -1280,18 +1280,6 @@ a {
   }
 }
 
-@media (min-width: 768px) {
-  .page__38 .content-graph {
-    margin-top: -5vw;
-  }
-}
-
-@media (max-width: 768px) {
-  .page__38 .content-graph {
-    margin-top: -80vw;
-  }
-}
-
 .page__39 .content {
   color: #73382B;
   font-size: 3.6em;
@@ -1328,11 +1316,11 @@ a {
 }
 
 .page__animation__cover--awan {
-  animation: swing 25s infinite alternate;
+  animation: swing 9s infinite alternate;
 }
 
 .page__animation__cover--awan2 {
-  animation: swingReverse 25s infinite alternate;
+  animation: swingReverse 9s infinite alternate;
 }
 
 .page__animation__cover--build-3 {
@@ -1365,51 +1353,43 @@ a {
 
 .page__animation__cover .kincir {
   position: relative;
-  height: 100%;
+}
+
+.page__animation__cover .kincir__1 {
+  height: 220px;
+  width: 110px;
+  position: absolute;
+  left: calc(35% - 20px);
+  bottom: calc(18% - 0px);
+}
+
+.page__animation__cover .kincir__2 {
+  height: 220px;
+  width: 110px;
+  transform: scale(0.7);
+  position: absolute;
+  right: calc(10% - 10px);
+  bottom: calc(18% - 0px);
 }
 
 .page__animation__cover .kincir__item--1 {
-  left: calc(35% - 42px);
-  bottom: calc(31% - 20px);
+  left: -7px;
+  bottom: 105px;
   animation: rotating 3s linear infinite;
   width: 130px;
 }
 
 .page__animation__cover .kincir__item--2 {
   width: 70px;
-  left: calc(34% - 25px);
-  bottom: calc(30% - 20px);
+  left: -22px;
+  bottom: 76px;
   animation: rotating 5s linear infinite;
 }
 
 .page__animation__cover .kincir__item--3 {
   width: 70px;
-  left: calc(37% - 22px);
-  bottom: calc(26% - 20px);
-  animation: rotating 4s linear infinite;
-}
-
-.page__animation__cover .kincir__item--4 {
-  width: 50px;
-  right: calc(15% - 30px);
-  left: auto;
-  bottom: calc(35% - 17px);
-  animation: rotating 3s linear infinite;
-}
-
-.page__animation__cover .kincir__item--5 {
-  width: 70px;
-  right: calc(17% - 37px);
-  bottom: calc(35% - 17px);
-  left: auto;
-  animation: rotating 5s linear infinite;
-}
-
-.page__animation__cover .kincir__item--6 {
-  width: 40px;
-  right: calc(13% - 34px);
-  left: auto;
-  bottom: calc(33% - 20px);
+  left: 39px;
+  bottom: 42px;
   animation: rotating 4s linear infinite;
 }
 
@@ -1494,12 +1474,76 @@ a {
   bottom: -2vw;
 }
 
-.page__animation__outlet--loop, .page__animation__outlet--loopMobile {
+.page__animation__outlet--loop, .page__animation__outlet--loopMobile, .page__animation__outlet .loop {
   bottom: -100%;
+}
+
+.page__animation__outlet .loop {
+  height: 530px;
+  width: 600px;
+  position: absolute;
+  left: 0;
+}
+
+.page__animation__outlet .loop .text-wrapper .content {
+  position: absolute;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 320px;
+  text-align: center;
+  right: calc(14% - 10px);
+  top: calc(15% - 0px);
+}
+
+.page__animation__outlet .loop .text-wrapper--2 {
+  display: none;
+}
+
+.page__animation__outlet .loop .text-wrapper--3 {
+  display: none;
+}
+
+.page__animation__outlet .loop .text-wrapper--4 {
+  display: none;
 }
 
 .page__animation__skema--content {
   background-size: contain !important;
+}
+
+.page__animation__pabrik--text {
+  opacity: 0;
+}
+
+.page__animation__air--text {
+  opacity: 0;
+}
+
+.page__animation__surya--text {
+  opacity: 0;
+}
+
+.page__animation__bayu--text {
+  opacity: 0;
+}
+
+.page__animation__ombak--text {
+  opacity: 0;
+}
+
+@media (min-width: 768px) {
+  .page__animation__ombak .content-graph {
+    margin-top: -5vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .page__animation__ombak .content-graph {
+    margin-top: -80vw;
+  }
 }
 
 .page__static {
@@ -2354,10 +2398,10 @@ body {
 
 @keyframes swing {
   0% {
-    transform: translateX(-7%);
+    transform: translateX(-5%);
   }
   50% {
-    transform: translateX(7%);
+    transform: translateX(5%);
   }
   100% {
     transform: translateX(0%);

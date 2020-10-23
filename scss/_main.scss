@@ -123,14 +123,7 @@
   }
 
   &__38{
-    .content-graph{
-      @include min-responsive($sm){
-        margin-top: -5vw;
-      }
-      @include max-responsive($sm){
-        margin-top: -80vw;
-      }
-    }
+    
   }
   
   &__39{
@@ -169,10 +162,10 @@
 
     &__cover{ 
       &--awan{
-        animation: swing 25s infinite alternate;
+        animation: swing 9s infinite alternate;
       }
       &--awan2{
-        animation: swingReverse 25s infinite alternate;
+        animation: swingReverse 9s infinite alternate;
       }
       &--build{
         &-3{
@@ -198,47 +191,43 @@
       }
       .kincir{
         position: relative;
-        height: 100%;
+        
+        &__1{
+          height: 220px;
+          width: 110px;
+          position: absolute;
+          left: calc(35% - 20px);
+          bottom: calc(18% - 0px);
+        }
+
+        &__2{
+          height: 220px;
+          width: 110px;
+          transform: scale(0.7);
+          position: absolute;
+          right: calc(10% - 10px);
+          bottom: calc(18% - 0px);
+        }
+
         &__item{          
           &--1{
-            left: calc(35% - 42px);
-            bottom: calc(31% - 20px);
+            left: -7px;
+            bottom: 105px;
             animation: rotating 3s linear infinite;
             width: 130px;
           }
           &--2{
             width: 70px;
-            left: calc(34% - 25px);
-            bottom: calc(30% - 20px);
+            left: -22px;
+            bottom: 76px;
             animation: rotating 5s linear infinite;
           }
           &--3{
             width: 70px;
-            left: calc(37% - 22px);
-            bottom: calc(26% - 20px);
+            left: 39px;
+            bottom: 42px;
             animation: rotating 4s linear infinite;
-          }
-          &--4{
-            width: 50px;
-            right: calc(15% - 30px);
-            left: auto;
-            bottom: calc(35% - 17px);
-            animation: rotating 3s linear infinite;
-          }
-          &--5{
-            width: 70px;
-            right: calc(17% - 37px);
-            bottom: calc(35% - 17px);
-            left: auto;
-            animation: rotating 5s linear infinite;
-          }
-          &--6{
-            width: 40px;
-            right: calc(13% - 34px);
-            left: auto;
-            bottom: calc(33% - 20px);
-            animation: rotating 4s linear infinite;
-          }
+          }         
         }
       }
     }
@@ -319,14 +308,87 @@
       &--booth{
         bottom: -2vw;
       }
-      &--loop, &--loopMobile{
+      &--loop, &--loopMobile, .loop{
         bottom: -100%;
+      }
+      .loop{
+        height: 530px;
+        width: 600px;
+        position: absolute;
+        left: 0;
+
+        .text-wrapper{
+          
+          .content{
+            position: absolute;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 320px;
+            text-align: center;
+            right: calc(14% - 10px);
+            top: calc(15% - 0px);
+          }
+
+          // &--1{
+          //   display: none;
+          // }
+          &--2{
+            display: none;
+          }
+          &--3{
+            display: none;
+          }
+          &--4{
+            display: none;
+          }
+        }
       }
     }
 
     &__skema{ 
       &--content{
         background-size: contain !important;
+      }
+    }
+
+    &__pabrik{
+      &--text{
+        opacity: 0;
+      }
+    }
+
+    &__air{
+      &--text{
+        opacity: 0;
+      }
+    }
+
+    &__surya{
+      &--text{
+        opacity: 0;
+      }
+    }
+
+    &__bayu{
+      &--text{
+        opacity: 0;
+      }
+    }
+
+    &__ombak{
+      &--text{
+        opacity: 0;
+      }
+      .content-graph{
+        @include min-responsive($sm){
+          margin-top: -5vw;
+        }
+        @include max-responsive($sm){
+          margin-top: -80vw;
+        }
       }
     }
 

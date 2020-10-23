@@ -506,10 +506,10 @@ body {
 // 3.2 Swing
 @keyframes swing{
   0%{
-    transform: translateX(-7%)
+    transform: translateX(-5%)
   }
   50%{
-    transform: translateX(7%)
+    transform: translateX(5%)
   }
   100%{
     transform: translateX(0%)

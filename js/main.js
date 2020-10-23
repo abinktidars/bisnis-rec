@@ -36,14 +36,14 @@ $(document).ready(function() {
         $(".backtop").addClass("show");
         $(".page__animation__cover--build-2").fadeOut(500);
         $(".page__animation__cover--build-3").fadeIn(500);    
-        $(".kincir-fade").fadeOut(300);    
+        $(".kincir__1").fadeOut(500);    
       } 
       else if (index == 2 && direction == "up") {
         $(".social").fadeIn(300);
         $(".backtop").removeClass("show");
         $(".page__animation__cover--build-2").fadeIn(500);
         $(".page__animation__cover--build-3").fadeOut(500);    
-        $(".kincir-fade").fadeIn(300);    
+        $(".kincir__1").fadeIn(500);    
         
       }
       else if (index == 2 && direction == "down") {          
@@ -251,34 +251,42 @@ $(document).ready(function() {
       else if (index == 27 && direction == "down") {    
         $(".page__animation__outlet--bubble").fadeOut(400);                                      
         $(".page__animation__outlet--bubble2").velocity({opacity: "0"}, {delay: 100, duration: 400});                
-        $(".page__animation__outlet--loop").velocity({bottom:"0%"}, {duration: 400});                                      
+        $(".loop").velocity({bottom:"0%"}, {duration: 400});                                      
         $(".page__animation__outlet--loopMobile").velocity({bottom:"0%"}, {duration: 400});                                      
       } 
       else if (index == 28 && direction == "up") {    
         $(".page__animation__outlet--bubble").fadeIn(400);                
         $(".page__animation__outlet--bubble2").velocity({opacity: "1"}, {delay: 700, duration: 400});                
-        $(".page__animation__outlet--loop").velocity({bottom:"-100%"}, {duration: 400});                                      
+        $(".loop").velocity({bottom:"-100%"}, {duration: 400});                                      
         $(".page__animation__outlet--loopMobile").velocity({bottom:"-100%"}, {duration: 400});                                      
       } 
       else if (index == 28 && direction == "down") { 
-        
+        $(".text-wrapper--1").fadeOut(500);
+        $(".text-wrapper--2").fadeIn(500);
       } 
       else if (index == 29 && direction == "up") {    
+        $(".text-wrapper--1").fadeIn(500);
+        $(".text-wrapper--2").fadeOut(500);
         
       } 
-      else if (index == 29 && direction == "down") {  
-        // $(".page__animation__outlet--loop").addClass("leftMove");                                                     
-        $(".page__animation__outlet--loop").velocity({left:"30%"}, {duration: 500});                                                     
+      else if (index == 29 && direction == "down") {                                                     
+        $(".loop").velocity({left:"30%"}, {duration: 500});  
+        $(".text-wrapper--2").fadeOut(500);
+        $(".text-wrapper--3").fadeIn(500);                                                   
       } 
-      else if (index == 30 && direction == "up") {                                                                     
-        // $(".page__animation__outlet--loop").removeClass("leftMove");                                                     
-        $(".page__animation__outlet--loop").velocity({left:"0%"}, {duration: 500});                                                                     
+      else if (index == 30 && direction == "up") {                                                                    
+        $(".loop").velocity({left:"0%"}, {duration: 500});   
+        $(".text-wrapper--2").fadeIn(500);
+        $(".text-wrapper--3").fadeOut(500);                                                                  
       } 
-      else if (index == 30 && direction == "down") {    
+      else if (index == 30 && direction == "down") { 
+        $(".text-wrapper--3").fadeOut(500);
+        $(".text-wrapper--4").fadeIn(500);  
         
       } 
       else if (index == 31 && direction == "up") {         
-        
+        $(".text-wrapper--3").fadeIn(500);
+        $(".text-wrapper--4").fadeOut(500);
       } 
       else if (index == 31 && direction == "down") {   
         $(".page__static__outlet").addClass("moveLeft");  
@@ -308,42 +316,52 @@ $(document).ready(function() {
       else if (index == 34 && direction == "down") {    
         $(".page__static__potensi").addClass("moveUp");        
         $(".page__static__pabrik").addClass("moveDown");        
+        $(".page__animation__pabrik--text").velocity({opacity: "1"}, {delay: 500, duration: 500});       
       } 
       else if (index == 35 && direction == "up") {    
         $(".page__static__potensi").removeClass("moveUp");        
         $(".page__static__pabrik").removeClass("moveDown");        
+        $(".page__animation__pabrik--text").velocity({opacity: "0"}, {delay: 500, duration: 500});       
       } 
       else if (index == 35 && direction == "down") {    
         $(".page__static__pabrik").addClass("moveUp");        
         $(".page__static__air").addClass("moveDown"); 
+        $(".page__animation__air--text").velocity({opacity: "1"}, {delay: 500, duration: 500});       
       } 
       else if (index == 36 && direction == "up") {    
         $(".page__static__pabrik").removeClass("moveUp");        
         $(".page__static__air").removeClass("moveDown");         
+        $(".page__animation__air--text").velocity({opacity: "0"}, {delay: 500, duration: 500});       
       } 
       else if (index == 36 && direction == "down") {    
         $(".page__static__air").addClass("moveUp");        
         $(".page__static__surya").addClass("moveDown");         
+        $(".page__animation__surya--text").velocity({opacity: "1"}, {delay: 500, duration: 500});       
       } 
       else if (index == 37 && direction == "up") {   
         $(".page__static__air").removeClass("moveUp");        
         $(".page__static__surya").removeClass("moveDown");         
+        $(".page__animation__surya--text").velocity({opacity: "0"}, {delay: 500, duration: 500});       
       } 
       else if (index == 37 && direction == "down") {    
         $(".page__static__surya").addClass("moveUp");        
         $(".page__static__bayu").addClass("moveDown");                 
+        $(".page__animation__bayu--text").velocity({opacity: "1"}, {delay: 500, duration: 500});       
       } 
       else if (index == 38 && direction == "up") {    
         $(".page__static__surya").removeClass("moveUp");        
         $(".page__static__bayu").removeClass("moveDown");                 
+        $(".page__animation__bayu--text").velocity({opacity: "0"}, {delay: 500, duration: 500});       
       } 
       else if (index == 38 && direction == "down") {    
         $(".page__static__bayu").addClass("moveUp");        
         $(".page__static__ombak").addClass("moveDown");                         
+        $(".page__animation__ombak--text").velocity({opacity: "1"}, {delay: 500, duration: 500});       
       } 
       else if (index == 39 && direction == "up") {    
         $(".page__static__bayu").removeClass("moveUp");        
         $(".page__static__ombak").removeClass("moveDown");                         
+        $(".page__animation__ombak--text").velocity({opacity: "0"}, {delay: 500, duration: 500});       
       } 
       else if (index == 39 && direction == "down") {    
         $(".page__static__ombak").addClass("moveUp");        
