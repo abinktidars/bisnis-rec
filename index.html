@@ -45,7 +45,7 @@
           <div class="wrapper">
             <div class="wrapper__content">
               <!-- Image -->
-              
+              <div id="animationKilang"></div>
               <!-- Spinner -->  
               <div class="spinner mt3">
                 <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
@@ -61,7 +61,6 @@
                   <circle fill="none" stroke-width="8" stroke-linecap="round" cx="33" cy="33" r="28"></circle>
                 </svg>
               </div>
-
               <small class="text-center text--white">Loading</small>
             </div>
           </div>
@@ -177,12 +176,24 @@
       <div class="picturefill-background page__animation__cover--bg">
         <span data-src="images/bg-hill-xs.svg"></span>
         <span data-src="images/bg-hill.svg" data-media="(min-width: 800px)"></span>
-      </div>
+      </div>      
     </div>    
     
     <!-- Scene REC-->
     <div class="page__static page__static__rec scrollSlide">
       <div class="page__animation page__animation__rec">
+        <div class="kincir__3">
+          <img src="images/kincir-stand-2.svg" alt="">
+          <div class="kincir__item">
+            <img src="images/kincir.svg" alt="" class="kincir__item--1 hidden-xs">
+          </div>
+          <div class="kincir__item">
+            <img src="images/kincir.svg" alt="" class="kincir__item--2 hidden-xs">
+          </div>
+          <div class="kincir__item">
+            <img src="images/kincir.svg" alt="" class="kincir__item--3 hidden-xs">
+          </div>          
+        </div>
         <div class="picturefill-background page__animation__rec--build">
           <span data-src="images/bg-build-rec-xs.svg"></span>
           <span data-src="images/bg-build-rec.svg" data-media="(min-width: 800px)"></span>
@@ -1194,7 +1205,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div>w
     </section>
 
     <!-- Page 32 -->
@@ -1388,6 +1399,7 @@
 
   <!-- Script Plugin -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bodymovin.js"></script>
   <script type="text/javascript" src="js/picturefill.min.js" async></script>
   <script type="text/javascript" src="js/picturefill-background.js"></script>
   <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>

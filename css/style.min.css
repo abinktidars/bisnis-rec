@@ -1132,7 +1132,7 @@ a {
 
 #preloader {
   overflow: hidden;
-  background: #35250c;
+  background: linear-gradient(0deg, #62B8CC 61.38%, #50AFC4 75.67%, #36A1B7 100%);
   height: 100%;
   width: 100%;
   z-index: 999999;
@@ -1154,6 +1154,75 @@ a {
 @media (max-width: 768px) {
   #preloader .wrapper__content {
     width: 300px;
+  }
+}
+
+.spinner {
+  margin: auto;
+  width: 66px;
+  height: 66px;
+  animation: contanim 2s linear infinite;
+}
+
+.spinner svg {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  transform: rotate(-90deg);
+}
+
+.spinner svg:nth-child(1) circle {
+  stroke: #ffffff;
+  stroke-dasharray: 1, 300;
+  stroke-dashoffset: 0;
+  animation: strokeanim 3s calc(.2s * (1)) ease infinite;
+  transform-origin: center center;
+}
+
+.spinner svg:nth-child(2) circle {
+  stroke: #88c76c;
+  stroke-dasharray: 1, 300;
+  stroke-dashoffset: 0;
+  animation: strokeanim 3s calc(.2s * (2)) ease infinite;
+  transform-origin: center center;
+}
+
+.spinner svg:nth-child(3) circle {
+  stroke: #bca964;
+  stroke-dasharray: 1, 300;
+  stroke-dashoffset: 0;
+  animation: strokeanim 3s calc(.2s * (3)) ease infinite;
+  transform-origin: center center;
+}
+
+.spinner svg:nth-child(4) circle {
+  stroke: #FFFF00;
+  stroke-dasharray: 1, 300;
+  stroke-dashoffset: 0;
+  animation: strokeanim 3s calc(.2s * (4)) ease infinite;
+  transform-origin: center center;
+}
+
+@keyframes strokeanim {
+  0% {
+    stroke-dasharray: 1, 300;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 120, 300;
+    stroke-dashoffset: -58.548324585;
+  }
+  100% {
+    stroke-dasharray: 120, 300;
+    stroke-dashoffset: -175.6449737549;
+  }
+}
+
+@keyframes contanim {
+  100% {
+    transform: rotate(360deg);
   }
 }
 
@@ -1393,8 +1462,58 @@ a {
   animation: rotating 4s linear infinite;
 }
 
+.page__animation__cover #animationRegulasi {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .page__animation__cover #animationRegulasi {
+    height: auto;
+    left: auto;
+    height: auto;
+    width: 110%;
+    bottom: 0;
+    right: 17%;
+    top: auto;
+  }
+}
+
 .page__animation__rec--serti-1, .page__animation__rec--serti-2, .page__animation__rec--serti-3, .page__animation__rec--serti-4, .page__animation__rec--serti-5 {
   display: none;
+}
+
+.page__animation__rec .kincir__3 {
+  height: 220px;
+  width: 110px;
+  position: absolute;
+  right: calc(24% - 11px);
+  bottom: calc(27% - 0px);
+}
+
+.page__animation__rec .kincir__item--1 {
+  left: -7px;
+  bottom: 105px;
+  animation: rotating 3s linear infinite;
+  width: 130px;
+}
+
+.page__animation__rec .kincir__item--2 {
+  width: 70px;
+  left: -22px;
+  bottom: 76px;
+  animation: rotating 5s linear infinite;
+}
+
+.page__animation__rec .kincir__item--3 {
+  width: 70px;
+  left: 39px;
+  bottom: 42px;
+  animation: rotating 4s linear infinite;
 }
 
 @media (min-width: 768px) {
@@ -2384,7 +2503,7 @@ body {
 @keyframes blink {
   0% {
     transform: scale(1);
-    box-shadow: 0 0 #10110f;
+    box-shadow: 0 0 #6ebf5f;
   }
   50% {
     transform: scale(1.1);

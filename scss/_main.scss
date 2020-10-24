@@ -121,10 +121,6 @@
       }
     }
   }
-
-  &__38{
-    
-  }
   
   &__39{
     .content{
@@ -161,6 +157,7 @@
     }
 
     &__cover{ 
+      // position: relative;
       &--awan{
         animation: swing 9s infinite alternate;
       }
@@ -230,6 +227,24 @@
           }         
         }
       }
+      #animationRegulasi{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+
+        @include max-responsive($sm){
+          height: auto;
+          left: auto;
+          height: auto;
+          width: 110%;
+          bottom: 0;
+          right: 17%;
+          top: auto;
+        }
+      }
     }
 
     &__rec{
@@ -237,6 +252,38 @@
       &--serti{
         &-1,&-2,&-3,&-4,&-5{
           display: none;
+        }
+      }
+
+      .kincir{
+
+        &__3{
+          height: 220px;
+          width: 110px;
+          position: absolute;
+          right: calc(24% - 11px);
+          bottom: calc(27% - 0px);
+        }
+
+        &__item{          
+          &--1{
+            left: -7px;
+            bottom: 105px;
+            animation: rotating 3s linear infinite;
+            width: 130px;
+          }
+          &--2{
+            width: 70px;
+            left: -22px;
+            bottom: 76px;
+            animation: rotating 5s linear infinite;
+          }
+          &--3{
+            width: 70px;
+            left: 39px;
+            bottom: 42px;
+            animation: rotating 4s linear infinite;
+          }         
         }
       }
     }

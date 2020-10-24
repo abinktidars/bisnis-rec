@@ -3,12 +3,34 @@ $(document).ready(function() {
   // Preload
   if (
     $(window).load(function() {
-      $("#preloader").fadeOut("slow", function() {
-        $(this).remove();
-      });
+      // $("#preloader").fadeOut("slow", function() {
+      //   $(this).remove();
+      // });
     })
   );
 
+  // Bodymovin Animation
+
+  // 1. Preload
+  var animation = bodymovin.loadAnimation({
+    container: document.getElementById('animationKilang'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    // path: 'images/bodymovin/preload/data.json',
+    path: 'images/bodymovin/pabrik/data.json',
+    name: 'myAnimation',
+  });
+
+  // 2. Kilang
+  // var animation = bodymovin.loadAnimation({
+  //   container: document.getElementById('animationKilang'),
+  //   renderer: 'svg',
+  //   loop: true,
+  //   autoplay: true,
+  //   path: 'images/bodymovin/pabrik/data.json',
+  //   name: 'myAnimation',
+  // });
 
   // Fullpage Js
   
