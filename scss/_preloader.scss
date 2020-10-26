@@ -40,7 +40,7 @@
 	}
 	svg:nth-child(1) circle {
 		// stroke:$white;
-		stroke:#516267;
+		stroke:#1e193d;
 		stroke-dasharray: 1, 300;
 		stroke-dashoffset: 0;
 		-webkit-animation: strokeanim 3s calc(.2s * (1)) ease infinite;
@@ -50,7 +50,7 @@
 	}
 	svg:nth-child(2) circle {
 		// stroke: #88c76c;
-		stroke: #b2a94a;
+		stroke: #e0d8c0;
 		stroke-dasharray: 1, 300;
 		stroke-dashoffset: 0;
 		-webkit-animation: strokeanim 3s calc(.2s * (2)) ease infinite;
@@ -60,7 +60,7 @@
 	}
 	svg:nth-child(3) circle {
 		// stroke: #bca964;
-		stroke: #734e3a;
+		stroke: #f2b120;
 		stroke-dasharray: 1, 300;
 		stroke-dashoffset: 0;
 		-webkit-animation: strokeanim 3s calc(.2s * (3)) ease infinite;
@@ -70,7 +70,7 @@
 	}
 	svg:nth-child(4) circle {
 		// stroke: $yellow;
-		stroke: #8e3434;
+		stroke: #e36647;
 		stroke-dasharray: 1, 300;
 		stroke-dashoffset: 0;
 		-webkit-animation: strokeanim 3s calc(.2s * (4)) ease infinite;

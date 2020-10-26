@@ -1174,7 +1174,7 @@ a {
 }
 
 .spinner svg:nth-child(1) circle {
-  stroke: #ffffff;
+  stroke: #1e193d;
   stroke-dasharray: 1, 300;
   stroke-dashoffset: 0;
   animation: strokeanim 3s calc(.2s * (1)) ease infinite;
@@ -1182,7 +1182,7 @@ a {
 }
 
 .spinner svg:nth-child(2) circle {
-  stroke: #88c76c;
+  stroke: #e0d8c0;
   stroke-dasharray: 1, 300;
   stroke-dashoffset: 0;
   animation: strokeanim 3s calc(.2s * (2)) ease infinite;
@@ -1190,7 +1190,7 @@ a {
 }
 
 .spinner svg:nth-child(3) circle {
-  stroke: #bca964;
+  stroke: #f2b120;
   stroke-dasharray: 1, 300;
   stroke-dashoffset: 0;
   animation: strokeanim 3s calc(.2s * (3)) ease infinite;
@@ -1198,7 +1198,7 @@ a {
 }
 
 .spinner svg:nth-child(4) circle {
-  stroke: #FFFF00;
+  stroke: #e36647;
   stroke-dasharray: 1, 300;
   stroke-dashoffset: 0;
   animation: strokeanim 3s calc(.2s * (4)) ease infinite;
