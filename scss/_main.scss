@@ -187,7 +187,6 @@
         }
       }
       .kincir{
-        position: relative;
         
         &__1{
           height: 220px;
@@ -398,6 +397,49 @@
     &__skema{ 
       &--content{
         background-size: contain !important;
+      }
+    }
+
+    &__potensi{
+      .kincir{
+        
+        &__4{
+          height: 220px;
+          width: 110px;
+          position: absolute;
+          left: calc(30% - 20px);
+          bottom: calc(20% - 0px);
+        }
+
+        &__5{
+          height: 220px;
+          width: 110px;
+          transform: scale(0.7);
+          position: absolute;
+          right: calc(13% - 10px);
+          bottom: calc(21% - 0px);
+        }
+
+        &__item{          
+          &--1{
+            left: -7px;
+            bottom: 105px;
+            animation: rotating 3s linear infinite;
+            width: 130px;
+          }
+          &--2{
+            width: 70px;
+            left: -22px;
+            bottom: 76px;
+            animation: rotating 5s linear infinite;
+          }
+          &--3{
+            width: 70px;
+            left: 39px;
+            bottom: 42px;
+            animation: rotating 4s linear infinite;
+          }         
+        }
       }
     }
 

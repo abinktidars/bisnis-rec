@@ -1420,10 +1420,6 @@ a {
   }
 }
 
-.page__animation__cover .kincir {
-  position: relative;
-}
-
 .page__animation__cover .kincir__1 {
   height: 220px;
   width: 110px;
@@ -1631,6 +1627,44 @@ a {
 
 .page__animation__skema--content {
   background-size: contain !important;
+}
+
+.page__animation__potensi .kincir__4 {
+  height: 220px;
+  width: 110px;
+  position: absolute;
+  left: calc(30% - 20px);
+  bottom: calc(20% - 0px);
+}
+
+.page__animation__potensi .kincir__5 {
+  height: 220px;
+  width: 110px;
+  transform: scale(0.7);
+  position: absolute;
+  right: calc(13% - 10px);
+  bottom: calc(21% - 0px);
+}
+
+.page__animation__potensi .kincir__item--1 {
+  left: -7px;
+  bottom: 105px;
+  animation: rotating 3s linear infinite;
+  width: 130px;
+}
+
+.page__animation__potensi .kincir__item--2 {
+  width: 70px;
+  left: -22px;
+  bottom: 76px;
+  animation: rotating 5s linear infinite;
+}
+
+.page__animation__potensi .kincir__item--3 {
+  width: 70px;
+  left: 39px;
+  bottom: 42px;
+  animation: rotating 4s linear infinite;
 }
 
 .page__animation__pabrik--text {
