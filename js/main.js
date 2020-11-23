@@ -20,6 +20,16 @@ $(document).ready(function() {
     path: 'images/bodymovin/pabrikan.json',
     name: 'myAnimation',
   });
+  
+  // 2. Pabrik
+  var animation2 = bodymovin.loadAnimation({
+    container: document.getElementById('animationPabrik'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'images/bodymovin/bg_pabrik.json',
+    name: 'myAnimation',
+  });
 
   // Fullpage Js
   
