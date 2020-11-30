@@ -13,7 +13,7 @@ $(document).ready(function() {
 
   // 1. Preload
   var animation = bodymovin.loadAnimation({
-    container: document.getElementById('animationKilang'),
+    container: document.getElementById('animationPreload'),
     renderer: 'svg',
     loop: true,
     autoplay: true,
@@ -21,8 +21,18 @@ $(document).ready(function() {
     name: 'myAnimation',
   });
   
-  // 2. Pabrik
+  // 2. Kilang
   var animation2 = bodymovin.loadAnimation({
+    container: document.getElementById('animationKilang'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'images/bodymovin/bg_kilang.json',
+    name: 'myAnimation',
+  });
+
+  // 3. Pabrik
+  var animation3 = bodymovin.loadAnimation({
     container: document.getElementById('animationPabrik'),
     renderer: 'svg',
     loop: true,
